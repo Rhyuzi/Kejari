@@ -1,0 +1,175 @@
+/*========================================*/
+/*---------- [_Section_About] ------------*/
+/*========================================*/
+.about-image {
+	position: relative;
+}
+.about-image:before {
+	background-image: url(../images/objects/1.png);
+	content: "";
+	height: 185px;
+	width: 200px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-repeat: no-repeat;
+	animation: spinInfinit 6000ms infinite linear;
+}
+.about-image .experience {
+	position: absolute;
+	left: -5px;
+	bottom: 45px;
+	padding: 45px 45px;
+	background: $bg-secondary-color;
+	max-width: 300px;
+	z-index: 2;
+	animation: infiUpDown 6s infinite alternate;
+}
+.about-image .experience h2 {
+	color: #fff;
+	font-weight: 900;
+	font-size: 80px;
+	line-height: 55px;
+}
+.about-image .experience h2 span {
+	color: #fff;
+	font-weight: 800;
+	font-size: 32px;
+	display: block;
+	text-transform: capitalize;
+	line-height: 38px;
+	margin-top: 30px;
+}
+.about-icon-box {
+	background: #ffffff;
+	padding: 50px 15px 40px;
+	text-align: center;
+	@include box-shadow ( 0 0 12px 2px rgba(0, 0, 0, 0.1) );
+	@include transition(all 100ms ease-out 0s);
+}
+.about-icon-box:hover {
+	background: $bg-primary-color;
+	@include transform(scale(1.1));
+}
+.about-icon-box:hover .icon span:before, .about-icon-box:hover .title {
+	color: #fff;
+}
+.about-icon-box .icon span:before {
+	font-size: 48px;
+	color: $bg-primary-color;
+	@include transition(all 100ms ease-out 0s);
+}
+.about-icon-box .icon span {
+	margin-bottom: 15px;
+	display: inline-block;
+}
+.about-icon-box .title {
+	font-size: 16px;
+	@include transition(all 100ms ease-out 0s);
+}
+.features-item {
+	text-align: center;
+	background: #fff;
+	padding: 40px 20px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+	border: 1px solid #e1d4cf;
+}
+.features-item:before {
+	position: absolute;
+	background: $bg-primary-color;
+	width: 64px;
+	height: 52px;
+	right: 0;
+	content: "";
+	bottom: 0;
+	opacity: 0.15;
+	@include transition(all 200ms ease-out 0s);
+}
+.features-item:hover:before {
+	background: $bg-primary-color;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+	content: "";
+	border-radius: 0px;
+	opacity: 1;
+	animation: none;
+}
+.feature-count {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 36px;
+	color: #2a2a2a;
+	opacity: 0.1;
+}
+.features-item i:before {
+	margin: 0;
+	color: $bg-primary-color;
+	font-size: 50px;
+	line-height: 50px;
+	display: block;
+	vertical-align: middle;
+	@include transition(all 200ms ease-out 0s);
+}
+.features-item .feature-title {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.features-item .feature-title a {
+	@include transition(all 200ms ease-out 0s);
+}
+.features-item .feature-title a:hover {
+	color: #fff;
+}
+.features-item:hover .feature-title,
+.features-item:hover p,
+.features-item:hover i:before {
+	color: #fff;
+	opacity: 0.9;
+}
+.features-item p {
+	@include transition(all 200ms ease-out 0s);
+}
+//Features Item Primary Color 2
+.features-item.primary-color2:before {
+	background: $bg-primary-color2;
+}
+.features-item.primary-color2:hover:before {
+	background: $bg-primary-color2;
+}
+.features-item.primary-color2 i:before {
+	color: $bg-primary-color2;
+}
+.features-item.primary-color2:hover i:before {
+	color: #fff;
+}
+//Features Item Primary Color 3
+.features-item.primary-color3:before {
+	background: $bg-primary-color3;
+}
+.features-item.primary-color3:hover:before {
+	background: $bg-primary-color3;
+}
+.features-item.primary-color3 i:before {
+	color: $bg-primary-color3;
+}
+.features-item.primary-color3:hover i:before {
+	color: #fff;
+}
+//Features Item Primary Color 4
+.features-item.primary-color4:before {
+	background: $bg-primary-color4;
+}
+.features-item.primary-color4:hover:before {
+	background: $bg-primary-color4;
+}
+.features-item.primary-color4 i:before {
+	color: $bg-primary-color4;
+}
+.features-item.primary-color4:hover i:before {
+	color: #fff;
+}

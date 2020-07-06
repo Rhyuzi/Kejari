@@ -1,0 +1,38 @@
+//======= Bg Color Variables ========//
+$body-font-color: #3e3e3e;
+$heading-font-color: #243b60;
+$bg-white: #ffffff;
+$bg-light-pink: #faf3f3;
+$bg-light-blue: #ebf0f2;
+$bg-silver: #F3F4F8;
+$bg-silver-light: #f6f6f6;
+$bg-silver-deep: #ecdaee;
+$bg-gray: #f7f7f7;
+$bg-primary-color: #f2343c;
+$bg-primary-color2: #4a47a3;
+$bg-primary-color3: #21bf73;
+$bg-primary-color4: #A91835;
+$bg-secondary-color: #243b60;
+$bg-dark-color: #0B0C26;
+$bg-blue-color: #571bcd;
+$gradient-color1: #0088d3;
+$gradient-color2: #04b87f;
+$bg-gradient-color: linear-gradient(45deg, #0088d3, #04b87f) !important;
+$bg-gradient-reverse-color: linear-gradient(-20deg, #04b87f, #0088d3) !important;
+$bg-light-gradient-color: linear-gradient(200deg, #fffdfd, rgba(168,122,33,0.15)) !important;
+//======= Text Color Variables ========//
+$text-white: #ffffff;
+$text-light-gray: #9d98bf;
+$text-silver: #f5f3f1;
+$text-gray: #a4a4aa;
+$text-gray-light: #CCCCCC;
+$text-dark-light: #808093;
+$text-primary-color: $bg-primary-color;
+$text-secondary-color: $bg-secondary-color;
+$heading-text-color :$bg-secondary-color;
+$heading-text-color :$bg-secondary-color;
+//========== Font Family ========== //
+$poppins-font: 'Poppins', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
+$body-font: $poppins-font;
+$heading-font: $poppins-font;

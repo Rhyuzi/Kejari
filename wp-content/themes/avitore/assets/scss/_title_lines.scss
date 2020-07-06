@@ -1,0 +1,24 @@
+/*========================================*/
+/*------------- [_Title_Lines] -----------*/
+/*========================================*/
+.title-under-line {
+	position: relative;
+}
+.title-under-line:before {
+	content: "";
+	background: $bg-primary-color;
+	position: absolute;
+	height: 3px;
+	width: 85px;
+	bottom: -35px;
+	left: 0;
+}
+.title-under-line:after {
+	background: $bg-secondary-color;
+	position: absolute;
+	content: "";
+	height: 14px;
+	width: 20px;
+	bottom: -40px;
+	left: 0;
+}

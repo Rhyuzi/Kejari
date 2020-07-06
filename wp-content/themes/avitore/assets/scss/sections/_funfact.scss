@@ -1,0 +1,21 @@
+/*========================================*/
+/*---------- [_Section_Funfact] ----------*/
+/*========================================*/
+.funfact {
+	.icon {
+		margin-bottom: 30px;
+		span {
+			&:before {
+				font-size: 54px;
+				color: $text-primary-color;
+			}
+		}
+	}
+	.counter {
+		font-size: 48px;
+		margin-bottom: 25px;
+	}
+	.title {
+		color: $text-gray;
+	}
+}

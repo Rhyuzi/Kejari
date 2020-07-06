@@ -1,0 +1,67 @@
+/*========================================*/
+/*----------- [_Section_Title] -----------*/
+/*========================================*/
+.section-title {
+	margin-bottom: 60px;
+	.sub-title {
+		font-weight: 400;
+		margin-bottom: 5px;
+		font-size: 16px;
+	}
+}
+.subtitle-block {
+	background: $bg-primary-color;
+	display: inline-block;
+	color: #fff;
+	padding: 3px 16px;
+	font-size: 13px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+.title-shape {
+	position: relative;
+}
+.title-shape:after {
+	position: absolute;
+	content: "";
+	background: $bg-primary-color;
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+	left: -10px;
+	z-index: -1;
+	top: -4px;
+	animation: leftright 1s infinite alternate;
+	opacity: 0.5;
+}
+.anim-box-objects {
+	position: relative;
+}
+.anim-box-objects:before {
+	position: absolute;
+	content: "";
+	height: 50px;
+	width: 50px;
+	left: 0;
+	right: -10px;
+	opacity: 0.1;
+	margin: 0 auto;
+	background: $bg-secondary-color;
+	top: -25px;
+	z-index: 0;
+	animation: heartbeat 0.3s infinite alternate;
+}
+.anim-box-objects:after {
+	position: absolute;
+	content: "";
+	background: $bg-primary-color;
+	height: 50px;
+	width: 50px;
+	opacity: 0.15;
+	margin: 0 auto;
+	left: -15px;
+	right: 0;
+	top: -15px;
+	animation: heartbeat 0.5s infinite alternate;
+	z-index: 0;
+}

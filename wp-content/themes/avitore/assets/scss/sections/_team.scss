@@ -1,0 +1,128 @@
+/*========================================*/
+/*---------- [_Section_Team] -------------*/
+/*========================================*/
+.team-block {
+	.team-upper-part {
+		position: relative;
+		.overlay {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background: rgba(33, 38, 49, 0.8);
+			padding: 35px 40px 40px 40px;
+			transform-origin: top;
+			@include transform(perspective(15em) rotateX(-20deg));
+			@include transition(all 500ms ease-out 0s);
+			opacity: 0;
+		}
+		.social-list {
+			position: absolute;
+			top: 30%;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			text-align: center;
+			@include transition(all 500ms ease-out 0s);
+			opacity: 0;
+			transform: scale(0);
+			&.vertical-style {
+				li {
+					float: none;
+					margin-right: 5px;
+					margin-bottom: 5px;
+					opacity: 0;
+					@include transform(translateY(60px));
+					@include transition(all 500ms ease-out 0s);
+					a {
+						border-radius: 4px;
+						background: $bg-primary-color;
+					}
+				}
+			}
+		}
+	}
+	.team-bottom-part {
+		background: #ffffff;
+		padding: 20px;
+		position: relative;
+		@include box-shadow ( 0 0 12px 2px rgba(0, 0, 0, 0.1) );
+		.designation {
+			color: $bg-primary-color;
+		}
+		&:before {
+			background: $bg-primary-color;
+			height: 25px;
+			width: 50px;
+			position: absolute;
+			content: "";
+			bottom: 0;
+			left: 0;
+			opacity: 0.1;
+			@include transition(all 400ms ease-out 0s);
+			z-index: 0;
+		}
+		&:after {
+			background: $bg-primary-color;
+			height: 25px;
+			width: 50px;
+			right: 0;
+			bottom: 0;
+			content: "";
+			@include transition(all 400ms ease-out 0s);
+			position: absolute;
+			right: 0;
+			z-index: 0;
+			opacity: 0.1;
+		}
+	}
+	&:hover {
+		.team-upper-part {
+			.overlay {
+				@include transform(perspective(0em) rotateX(0deg));
+				opacity: 1;
+			}
+			.social-list {
+				position: absolute;
+				top: 50%;
+				opacity: 1;
+				@include transform(scale(1));
+				&.vertical-style {
+					li {
+						opacity: 1;
+						@include transform(translateY(0));
+					}
+				}
+			}
+		}
+		.team-bottom-part {
+			.team-title {
+				z-index: 1;
+				color: #fff;
+				position: sticky;
+				a {
+					color: #fff;
+				}
+			}
+			.designation {
+				z-index: 1;
+				position: sticky;
+				color: #fff;
+			}
+			&:before {
+				height: 100%;
+				width: 100%;
+				z-index: 0;
+				opacity: 1;
+			}
+			&:after {
+				height: 100%;
+				z-index: 0;
+				width: 100%;
+				opacity: 1;
+			}
+		}
+	}
+}
